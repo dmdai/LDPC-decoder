@@ -1,14 +1,10 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   File Name: GenTannerFileFromH.m 
 %   Purpose: Genate Tannaer file from a given parity-check matrix H of small size 
 %            and demonstrate the file format for students. 
 %   Inputs:  Parity-check matrix H
 %   Outputs:  Tanner File.txt, the name of which appears at line 23. 
-%   Created By:  Dr. Xiaofu Wu, NJUPT
-%   Data: Feb. 25, 2016
-%   Revision History:  No
-%   Any comments, please forward to xfuwu@ieee.org
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear;
 H = [1 1 1 0 0 0;
      0 1 0 1 0 1;
@@ -16,8 +12,8 @@ H = [1 1 1 0 0 0;
      1 0 0 0 1 1];
 [m,n]=size(H)
 
-dv_deg=sum(H,1) //每列的和
-dc_deg=sum(H,2) //每行的和
+dv_deg=sum(H,1) 
+dc_deg=sum(H,2) 
 dvmax=max(dv_deg)
 dcmax=max(dc_deg)
 
