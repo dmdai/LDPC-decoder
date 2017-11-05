@@ -50,13 +50,5 @@ void AWGNChannel(double *receiveseq, int *codeseq, struct AWGN *awgn,int length)
 		temp = (double)sqrt((double)(-2) * log((double)1 - u1));
 		*(receiveseq + i) = (awgn->sigma) * cos(2 * PI * u2) * temp + (1-2 * (*(codeseq + i))); 
 	}
-	/*
-	printf("经过AWGN信道后，输出为：\n");
-	for (i=0;i<length;i++)
-	{
-		printf("%f\t",*(receiveseq+i));
-	}
-	printf("\n\n");
-	*/
 }
 
